@@ -22,7 +22,7 @@ const Footer = () => {
         e.target.src = githubLight
     }
     return (
-        <footer className={`w-full ${darkMode ? 'bg-dark-blue' : 'bg-white'}`}>
+        <footer className={`inset-x-0 bottom-0 w-full ${darkMode ? 'bg-dark-blue' : 'bg-white'}`}>
             <hr className={`w-full bg-light-gray ${darkMode ? "text-gray-text-secondary" : "text-light-gray"}`} />
             <div className={`flex justify-between items-center gap-6 p-6 sm-max:flex-col ${darkMode ? 'bg-dark-blue text-white' : 'bg-white text-dark-gray-text'}`}>
                 <div>Copyright © 2023, All Right Reserved</div>

@@ -18,7 +18,7 @@ const ItemCount1 = ({inicial, stock, onAdd}) => {
             onAdd(contador)
         }
     } 
-    //const agrerarAlCarrito = () => onAdd(contador)
+    
     return (
         <>
             <div className='flex justify-center items-center bg-white p-2 rounded-full border border-light-gray gap-2 ml-3'>

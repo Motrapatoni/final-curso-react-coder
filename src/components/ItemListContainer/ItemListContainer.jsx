@@ -6,27 +6,23 @@ import { useDarkModeContext } from '../../Context/DarkModeContext'
 import { getProductos } from '../../assets/firebase'
 
 const ItemListContainer = () => {
-
     const {darkMode} = useDarkModeContext()
     const [productos, setProductos] = useState([])
     const {category} = useParams()
     useEffect(() => {
         if(category) {
-
             getProductos().then(products => {
-                const productList = products.filter(prod => prod.stock > 0).filter(prod => prod.idCategoria === category)
+                const productList = products.filter(prod => prod.quantity > 0).filter(prod => prod.category === category)
                 const cardProductos = ItemList({productList})
                 setProductos(cardProductos)
             })
         } else {
-
             getProductos().then(products => {
-                const productList = products.filter(prod => prod.stock > 0)
+                const productList = products.filter(prod => prod.quantity > 0)
                 const cardProductos = ItemList({productList})
                 setProductos(cardProductos)
             })
         }
-
     }, [category]);
     return (
         <>

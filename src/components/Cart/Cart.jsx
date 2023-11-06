@@ -15,6 +15,7 @@ import { useDarkModeContext } from '../../Context/DarkModeContext'
 
 const Cart = () => {
     const {carrito, emptyCart, removeItem, totalPrice, getItemQuantity, addItem} = useCartContext()
+    const DEFAULT_IMAGE = "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQgmEXMXFKZ2CZKwF4Gm61tXhu15meG9FnD-9KWyX-cWgGyBRCihh3PhCZTpzlxUKlX1ws&usqp=CAU"
     const {darkMode} = useDarkModeContext()
     return (
         <>
@@ -33,7 +34,7 @@ const Cart = () => {
                                 <div className='lg-min:justify-end flex items-end min-w-0 h-full min-h-0 md:justify-start sm-max:justify-start'>
                                     <div className={`text-sm pr-2 ${darkMode ? "text-light-gray" : "text-gray-text-secondary"}`}>País/región:</div>
                                     <button className='cursor-pointer inline'>
-                                        <div className={`text-sm underline ${darkMode ? "text-white" : "text-dark-gray-text"}`}>Estados Unidos</div>
+                                        <div className={`text-sm underline ${darkMode ? "text-white" : "text-dark-gray-text"}`}>Uruguay</div>
                                     </button>
                                 </div>
                             </div>
@@ -76,7 +77,7 @@ const Cart = () => {
                                 <div className='lg-min:justify-end flex items-end min-w-0 h-full min-h-0 md:justify-start sm-max:justify-start'>
                                     <div className={`text-sm pr-2 ${darkMode ? "text-light-gray" : "text-gray-text-secondary"}`}>País/región:</div>
                                     <button className='cursor-pointer inline'>
-                                        <div className={`text-sm underline ${darkMode ? "text-white" : "text-dark-gray-text"}`}>Estados Unidos</div>
+                                        <div className={`text-sm underline ${darkMode ? "text-white" : "text-dark-gray-text"}`}>Uruguay</div>
                                     </button>
                                 </div>
                             </div>
@@ -94,15 +95,15 @@ const Cart = () => {
                                             <div className='flex flex-nowrap min-w-0 flex-col min-h-0'>
                                                 <div className='flex items-center gap-6'>
                                                     <picture>
-                                                        <img className='h-[120px] w-[120px] object-contain' src={prod.img} alt="Producto" />
+                                                        <img className='h-[120px] w-[120px] object-contain' src={prod.image !== "" ? prod.image : DEFAULT_IMAGE} alt="Producto" />
                                                     </picture>
                                                     <div className='flex justify-center min-h-[120px] min-w-0 flex-col grow'>
                                                         <div className='flex flex-col min-w-0 min-h-0 justify-between gap-4'>
                                                             <div className='flex flex-col min-w-0 min-h-0 gap-2'>
-                                                                <div className={`text-xl font-semibold ${darkMode ? "text-white" : "text-dark-gray-text"}`}>{prod.nombre}</div>
+                                                                <div className={`text-xl font-semibold ${darkMode ? "text-white" : "text-dark-gray-text"}`}>{prod.name}</div>
                                                             </div>
                                                             <div className='flex flex-col min-w-0 min-h-0 gap-2'>
-                                                                <div className={`text-base font-normal ${darkMode ? "text-white" : "text-dark-gray-text"}`}>Stock: {prod.stock} unidades</div>
+                                                                <div className={`text-base font-normal ${darkMode ? "text-white" : "text-dark-gray-text"}`}>Stock: {prod.quantity} unidades</div>
                                                             </div>
                                                         </div>
                                                     </div>
@@ -124,7 +125,7 @@ const Cart = () => {
                                                         </div>
                                                     </div>
                                                     <div className='flex flex-nowrap min-w-0 min-h-0 flex-col'>
-                                                        <div className={`text-right text-base font-bold ${darkMode ? "text-white" : "text-dark-gray-text"}`}>${new Intl.NumberFormat('de-DE').format(prod.precio * prod.cant)}</div>
+                                                        <div className={`text-right text-base font-bold ${darkMode ? "text-white" : "text-dark-gray-text"}`}>${new Intl.NumberFormat('de-DE').format(prod.price * prod.cant)}</div>
                                                     </div>
                                                 </div>
                                             </div>
@@ -151,7 +152,7 @@ const Cart = () => {
                                             </div>
                                             <div className='w-1/4 mt-4 basis-auto shrink-0 grow-0 max-w-full flex justify-end'>
                                                 <div className='flex flex-nowrap min-w-0 flex-col min-h-0 justify-center'>
-                                                    <div className={`text-right text-base font-bold ${darkMode ? "text-white" : "text-dark-gray-text"}`}>${new Intl.NumberFormat('de-DE').format(prod.precio * prod.cant)}</div>
+                                                    <div className={`text-right text-base font-bold ${darkMode ? "text-white" : "text-dark-gray-text"}`}>${new Intl.NumberFormat('de-DE').format(prod.price * prod.cant)}</div>
                                                 </div>
                                             </div>
                                         </div>
