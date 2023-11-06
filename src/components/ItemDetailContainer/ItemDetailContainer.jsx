@@ -1,18 +1,13 @@
 import React from 'react'
 import { useState, useEffect } from 'react'
 import { useParams } from 'react-router-dom'
-//import consultarBDD from '../../assets/funciones.js'
-import { getProducto } from '../../assets/firebase.js'
+import { getProducto } from '../../assets/firebase.jsx'
 import ItemDetail from '../ItemDetail/ItemDetail.jsx'
 
 const ItemDetailContainer = () => {
     const [producto, setProducto] = useState([])
     const {id} = useParams()
     useEffect(() => {
-        // consultarBDD('../json/productos.json').then(productos => {
-        //     const prod = productos.find(product => product.id === parseInt(id))
-        //     setProducto(prod)
-        // })
         getProducto(id).then(prod => setProducto(prod))
     },[id])
     return (

@@ -40,7 +40,7 @@ export const CartProvider = (props) => {
     }
 
     const totalPrice = () => {
-        return carrito.reduce((acum, prod) => acum += (prod.cant * prod.precio), 0)
+        return carrito.reduce((acum, prod) => acum += (prod.cant * prod.price), 0)
     }
     
     return (
