@@ -1,0 +1,182 @@
+[
+    {
+        "id": 1,
+        "name": "Helado de Vainilla",
+        "price": 5.99,
+        "description": "Delicioso helado de vainilla con chispas de chocolate.",
+        "category": "congelados",
+        "image": "",
+        "quantity": 6
+    },
+    {
+        "id": 2,
+        "name": "Refresco de Naranja",
+        "price": 1.99,
+        "description": "Refresco de naranja frío y refrescante.",
+        "category": "bebidas",
+        "image": "",
+        "quantity": 6
+    },
+    {
+        "id": 3,
+        "name": "Cereal de Avena",
+        "price": 3.49,
+        "description": "Cereal de avena saludable y sabroso.",
+        "category": "cereales",
+        "image": "",
+        "quantity": 6
+    },
+    {
+        "id": 4,
+        "name": "Cómics de Superhéroes",
+        "price": 12.99,
+        "description": "Colección de cómics de tus superhéroes favoritos.",
+        "category": "comics",
+        "image": "",
+        "quantity": 6
+    },
+    {
+        "id": 5,
+        "name": "Camiseta de Superhéroe",
+        "price": 9.99,
+        "description": "Camiseta con diseño de superhéroe para los fans.",
+        "category": "ropa",
+        "image": ""
+ ,
+"quantity": 6   },
+    {
+        "id": 6,
+        "name": "Pizza Congelada",
+        "price": 6.49,
+        "description": "Pizza congelada lista para hornear.",
+        "category": "congelados",
+        "image": "",
+        "quantity": 6
+    },
+    {
+        "id": 7,
+        "name": "Agua Mineral",
+        "price": 0.99,
+        "description": "Agua mineral pura y refrescante.",
+        "category": "bebidas",
+        "image": "",
+        "quantity": 6
+    },
+    {
+        "id": 8,
+        "name": "Granola con Frutas",
+        "price": 4.79,
+        "description": "Granola crujiente con trozos de frutas.",
+        "category": "cereales",
+        "image": "",
+        "quantity": 6
+    },
+    {
+        "id": 9,
+        "name": "Cómics de Ciencia Ficción",
+        "price": 14.99,
+        "description": "Cómics emocionantes de ciencia ficción.",
+        "category": "comics",
+        "image": "",
+        "quantity": 6
+    },
+    {
+        "id": 10,
+        "name": "Vestido de Verano",
+        "price": 19.99,
+        "description": "Vestido ligero y elegante para el verano.",
+        "category": "ropa",
+        "image": ""
+ ,
+"quantity": 6   },
+    {
+        "id": 11,
+        "name": "Gelatina de Frambuesa",
+        "price": 2.49,
+        "description": "Gelatina suave y deliciosa con sabor a frambuesa.",
+        "category": "congelados",
+        "image": "",
+        "quantity": 6
+    },
+    {
+        "id": 12,
+        "name": "Café Instantáneo",
+        "price": 5.99,
+        "description": "Café instantáneo de alta calidad para tus mañanas.",
+        "category": "bebidas",
+        "image": "",
+        "quantity": 6
+    },
+    {
+        "id": 13,
+        "name": "Muesli de Frutas",
+        "price": 3.99,
+        "description": "Muesli crujiente con trozos de frutas exóticas.",
+        "category": "cereales",
+        "image": "",
+        "quantity": 6
+    },
+    {
+        "id": 14,
+        "name": "Cómics de Detectives",
+        "price": 11.49,
+        "description": "Cómics intrigantes de detectives y misterio.",
+        "category": "comics",
+        "image": "",
+        "quantity": 6
+    },
+    {
+        "id": 15,
+        "name": "Shorts de Playa",
+        "price": 8.99,
+        "description": "Shorts cómodos y coloridos para la playa.",
+        "category": "ropa",
+        "image": ""
+ ,
+"quantity": 6   },
+    {
+        "id": 16,
+        "name": "Tortillas de Maíz",
+        "price": 3.49,
+        "description": "Tortillas de maíz ideales para tacos y burritos.",
+        "category": "congelados",
+        "image": "",
+        "quantity": 6
+    },
+    {
+        "id": 17,
+        "name": "Zumo de Manzana",
+        "price": 1.99,
+        "description": "Zumo de manzana natural y saludable.",
+        "category": "bebidas",
+        "image": "",
+        "quantity": 6
+    },
+    {
+        "id": 18,
+        "name": "Avena con Pasas",
+        "price": 4.49,
+        "description": "Avena nutritiva con pasas y frutos secos.",
+        "category": "cereales",
+        "image": "",
+        "quantity": 6
+    },
+    {
+        "id": 19,
+        "name": "Cómics de Aventuras",
+        "price": 13.99,
+        "description": "Cómics emocionantes de aventuras y exploración.",
+        "category": "comics",
+        "image": "",
+        "quantity": 6
+    },
+    {
+        "id": 20,
+        "name": "Vestido Elegante",
+        "price": 24.99,
+        "description": "Vestido elegante y sofisticado para ocasiones especiales.",
+        "category": "ropa",
+        "image": ""
+ ,
+"quantity": 6   }
+]
